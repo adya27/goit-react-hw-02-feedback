@@ -1,12 +1,14 @@
 import React from "react";
 
+import styles from "./Statistics.module.css";
+
 function Statistics(prop) {
   return (
     <div>
       <h2>Statistics</h2>
-      <span style={{ marginRight: "10px" }}>Good: {prop.good}</span>
-      <span style={{ marginRight: "10px" }}>Neutral: {prop.neutral}</span>
-      <span style={{ marginRight: "10px" }}>Bad: {prop.bad}</span>
+      <span className={styles.Statistic}>Good: {prop.good}</span>
+      <span className={styles.Statistic}>Neutral: {prop.neutral}</span>
+      <span className={styles.Statistic}>Bad: {prop.bad}</span>
       <span>Total: {prop.total}</span>
       <h2>
         Positive feedback:

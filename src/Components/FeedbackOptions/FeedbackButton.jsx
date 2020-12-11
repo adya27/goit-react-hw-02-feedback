@@ -1,6 +1,12 @@
+import styles from "./FeedbackButton.module.css";
+
 function FeedbackButton(prop) {
   return (
-    <button style={{ margin: "10px" }} type="button" onClick={prop.handle}>
+    <button
+      className={styles.FeedbackButton}
+      type="button"
+      onClick={prop.handle}
+    >
       {prop.btnName}
     </button>
   );
