@@ -1,4 +1,5 @@
 import FeedbackButton from "./FeedbackButton";
+import PropTypes from "prop-types";
 
 function FeedbackOption({ handleGood, handleNeutral, handleBad }) {
   return (
@@ -11,3 +12,9 @@ function FeedbackOption({ handleGood, handleNeutral, handleBad }) {
 }
 
 export default FeedbackOption;
+
+FeedbackOption.propTypes = {
+  handleBad: PropTypes.func.isRequired,
+  handleGood: PropTypes.func.isRequired,
+  handleNeutral: PropTypes.func.isRequired,
+};

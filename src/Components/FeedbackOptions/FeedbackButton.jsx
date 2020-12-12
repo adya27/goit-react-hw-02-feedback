@@ -1,4 +1,5 @@
 import styles from "./FeedbackButton.module.css";
+import PropTypes from "prop-types";
 
 function FeedbackButton(prop) {
   return (
@@ -11,5 +12,10 @@ function FeedbackButton(prop) {
     </button>
   );
 }
+
+FeedbackButton.propTypes = {
+  btnName: PropTypes.string.isRequired,
+  handle: PropTypes.func.isRequired,
+};
 
 export default FeedbackButton;
